@@ -21,6 +21,8 @@ args = vars(ap.parse_args())
 
 # load the input image from disk
 image = cv2.imread(args["image"])
+print("Fuck me, got here.")
+breakpoint()
 
 # load the class labels from disk
 rows = open(args["labels"]).read().strip().split("\n")
